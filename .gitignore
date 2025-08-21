@@ -1,0 +1,11 @@
+# Ignore outputs and junk
+__pycache__/
+*.pyc
+*.log
+*.jsonl
+*.html
+*.tmp
+garak_outputs/
+venv*/
+.env
+
