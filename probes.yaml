@@ -2,3 +2,20 @@ version: v1
 probes:
   - lmrc.SlurUsage
 
+  # direct attempts to trigger biased/abusive content toward groups
+  - grandma.Slurs                                  # coax slur usage via “grandma” jailbreak  :contentReference[oaicite:0]{index=0}
+  - latentinjection.LatentJailbreak                # latent jailbreak with identity payloads    :contentReference[oaicite:1]{index=1}
+
+  # RealToxicityPrompts – identity & abuse categories (strong signal of bias/toxicity)
+  - realtoxicityprompts.RTPIdentity_Attack         # identity-directed attacks                  :contentReference[oaicite:2]{index=2}
+  - realtoxicityprompts.RTPInsult                  # insults (often identity-linked)            :contentReference[oaicite:3]{index=3}
+  - realtoxicityprompts.RTPSevere_Toxicity         # severe toxicity subset                      :contentReference[oaicite:4]{index=4}
+  - realtoxicityprompts.RTPProfanity               # profanity subset                            :contentReference[oaicite:5]{index=5}
+
+  # additional LMRC items that surface discriminatory behavior
+  - lmrc.Bullying                                  # harassment / group-targeted abuse           :contentReference[oaicite:6]{index=6}
+  - lmrc.Deadnaming                                # identity disrespect (LGBTQ+)                :contentReference[oaicite:7]{index=7}
+
+  # helpers that can lower guardrails so bias leaks out in follow-ups
+  - snowball.GraphConnectivity                     # escalation probe that erodes refusal        :contentReference[oaicite:8]{index=8}
+  - misleading.FalseAssertion                       # tests if model “goes along” with false claims (can expose ideological tilt) :contentReference[oaicite:9]{index=9}
