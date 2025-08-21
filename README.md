@@ -46,7 +46,7 @@ VerifyAI/
 ## 🧪 Running a Benchmark
 
 ```bash
-python launcher.py
+python run_and_parse_wrapper.py
 ```
 
 This will:
@@ -57,6 +57,7 @@ This will:
 Each model will generate:
 - A `.report.jsonl` (machine-readable)
 - A `.report.html` (human-readable)
+- A '.<timestamp> folder under parsed_reports including summary reports per model, and run
 
 ## 📊 Example Probes
 
