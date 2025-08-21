@@ -6,7 +6,7 @@ Built to support researchers, developers, and policymakers in understanding how 
 
 ## 🚀 Features
 
-- ✅ Benchmark Hugging Face models locally or in the cloud
+- ✅ We benchmark models locally or in the cloud 
 - ✅ Modular config system (models + probes)
 - ✅ Generates structured `.jsonl` and `.html` reports
 - ✅ Timestamped + versioned output folders
@@ -80,7 +80,7 @@ VerifyAI is in early development. We’re building toward:
 
 **Join the mission to make LLM safety transparent and accessible.**
 
-> ✉️ Want updates or to contribute? [Join the list](#)
+> ✉️ Want updates or to contribute? [Join the list](https://tally.so/r/wdM4EK)
 
 ## 📄 License
 
