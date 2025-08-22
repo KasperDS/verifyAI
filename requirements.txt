@@ -1,2 +1,3 @@
 garak
 pyyaml
+bs4
